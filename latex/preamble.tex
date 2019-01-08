@@ -1,0 +1,44 @@
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
+\titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\usepackage{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage{hyperref}% http://ctan.org/pkg/hyperref
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue
+}
+\usepackage{titling}
+\pretitle{\begin{center}\huge \vskip 3em}
+\posttitle{%
+  \par\large \vskip 0.5em
+  A Collection of Resources to Facilitate Open Science Practices
+  \par\end{center}\vskip 1em}
+\preauthor{%
+  \begin{center}
+  \large \lineskip 0.5em%
+  \itshape
+  \begin{tabular}[t]{c}
+  }
+\postauthor{\end{tabular}\par\end{center}}
+\predate{\begin{center}\large}
+\postdate{%
+  \normalsize
+  \par
+  [last edit: \today ]
+  \vfill
+  \includegraphics[width=4cm,height=6cm]{images/lmu-osc_logo_small.jpg}
+  \end{center}
+}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\renewcommand\thesubsection{}
+\renewcommand\thesubsubsection{}
+

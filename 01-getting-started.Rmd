@@ -1,0 +1,19 @@
+# Getting Started {#getting_started}
+
+If you don't know where to start, here are 10 easy steps from [Felix Schönbrodt's Open Science workshop](https://osf.io/hjx5p/), that you can take towards a more transparent and reproducible research practice. Every step will add a little more scientific value to your research.
+
+1.  **Create an account on OSF** ([http://osf.io/](http://osf.io/))
+2.  **Upload the material for an existing study** (questionnaires, maybe reproducible analysis scripts) to an OSF project.
+3.  **Add an open license to all of your figures** (so that you can reuse them in later publications, blog posts, or presentations: „Figure available under a CC-BY4.0 license at osf.io/XXXX.“
+4.  For the next project: **Change the consent forms** in a way that **open data** would be possible for that project (see [https://osf.io/mgwk8/wiki/Consent%20form%20templates%20for%20open%20data/](https://osf.io/mgwk8/wiki/Consent%20form%20templates%20for%20open%20data/)).
+5.  **Sign the PRO initiative** and expect openness (or a justification why not) if you review another paper ([https://opennessinitiative.org/](https://opennessinitiative.org/))
+6.  For the next data analysis: Practice to create **scripts for reproducible data analysis** (e.g., SPSS syntax, R scripts). All analytic steps that lead from raw data to the final results should be reproducible.
+7.  **Let a master student preregister his/her thesis**. Can be either a „local preregisteration“, or a proper preregistration at OSF or at [https://aspredicted.org/](https://aspredicted.org/). See this workshop material for how to do a preregistration: [https://osf.io/yd487/](https://osf.io/yd487/) [https://osf.io/mx7yp/](https://osf.io/mx7yp/)
+8.  **Do you own first preregistration**; enter the Prereg challenge and get 1000$: [https://cos.io/prereg/](https://cos.io/prereg/)
+9.  **Publish your first open data set**: Ensure anonymity, provide a codebook. See here for details: [http://econtent.hogrefe.com/doi/pdf/10.1026/0033-3042/a000341](http://econtent.hogrefe.com/doi/pdf/10.1026/0033-3042/a000341)
+10.  Team up with colleagues and **establish a local open science initiative** (enter your name and affiliation in [this list](https://osf.io/tbkzh/wiki/Wer%20macht%20bei%20meiner%20Uni%20mit%3F/) and see other colleagues that want to engage in a local initiative)
+
+***
+
+* [http://www.osc.uni-muenchen.de/news/os_flyer/index.html](http://www.osc.uni-muenchen.de/news/os_flyer/index.html) This info flyer gives a great overview on easy steps to take toward transparent research.
+* [Felix Henninger's Open Science knowledge base](https://felixhenninger.gitbooks.io/open-science-knowledge-base/content/) is a further helpful resource for quick answers to basic Open Science questions 

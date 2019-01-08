@@ -1,0 +1,47 @@
+# Key Papers {#key_papers}
+
+
+This chapter should serve as a recommondation list of Open Science articles, guidelines, and other toolboxes offering helpful resources.
+
+**Transparency Guide**
+
+Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H.,... Frank, M. C. (2018, March 25). A practical guide for transparency in psychological science. Retrieved from [psyarxiv.com/rtygm](http://psyarxiv.com/rtygm)
+
+**Open Science: What, Why, and How**
+
+Spellman, B., Gilbert, E. A., & Corker, K. S. (2017, September 20). Open Science: What, Why, and How. Retrieved from [psyarxiv.com/ak6jr](http://psyarxiv.com/ak6jr)
+
+**PRO Initiatives Guidelines**
+
+"These pages provide guidance in implementing open practices and links to resources on the web that help authors contribute to the scientific literature in a more open way." [https://opennessinitiative.org/guidelines-for-authors/](https://opennessinitiative.org/guidelines-for-authors/)
+
+**Open Science FAQ**
+
+[Felix Henninger's FAQ to Open Science](https://felixhenninger.gitbooks.io/open-science-knowledge-base/content/) topics offers a great resource for quick answers concerning Open Science topcis
+
+**Managing and Sharing Data: Best Practice for Researchers**
+
+[UK Data Archive's guide](http://www.data-archive.ac.uk/media/2894/managingsharing.pdf) for managing data for sharing and for ethics, consent, and licensing issues.
+
+**DataWiz Knowledge Base**
+
+Best practice guidelines, tools and resources for researchers before, during and after data collection: [https://datawizkb.leibniz-psychology.org/](https://datawizkb.leibniz-psychology.org/)
+
+**Resource Library by BITSS**
+
+Berkeley Initiative for Transparency in the Social Sciences: [https://www.bitss.org/resource-tag/education/](https://www.bitss.org/resource-tag/education/)
+
+**Open Science MOOC Resource Library**
+
+Great collection of resources as part of an Open Science MOOC
+[https://opensciencemooc.eu/open-science-resources/](https://opensciencemooc.eu/open-science-resources/)
+
+**Further Recommended Readings**
+
+*   Reproducibility Project: Psychology: [https://osf.io/ezcuj/](https://osf.io/ezcuj/)
+*   The Replication Network: [https://replicationnetwork.com](https://replicationnetwork.com)
+*   Ioannidis, J. P. (2005). Why most published research findings are false. _PLoS medicine, 2_(8), e124\. [https://doi.org/10.1371/journal.pmed.0020124](https://doi.org/10.1371/journal.pmed.0020124)
+*   Simmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant. _Psychological science, 22_(11)_,_ 1359-1366\. Available at: [http://journals.sagepub.com/doi/pdf/10.1177/0956797611417632](http://journals.sagepub.com/doi/pdf/10.1177/0956797611417632)
+*   Simmons, Joseph P. and Nelson, Leif D. and Simonsohn, Uri, A 21 Word Solution (October 14, 2012). Available at SSRN: [https://ssrn.com/abstract=2160588](https://ssrn.com/abstract=2160588) or [http://dx.doi.org/10.2139/ssrn.2160588](http://dx.doi.org/10.2139/ssrn.2160588)
+*   Masuzzo P, Martens L. (2017) Do you speak open science? Resources and tips to learn the language. _PeerJ Preprints_ 5:e2689v1 [https://doi.org/10.7287/peerj.preprints.2689v1](https://doi.org/10.7287/peerj.preprints.2689v1)
+*   Garret Christensen's [Manual of Best Practices in Transparent Social Science](https://github.com/garretchristensen/BestPracticesManual/blob/master/Manual.pdf)

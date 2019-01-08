@@ -1,0 +1,223 @@
+
+# Resources for Researchers {#res_researchers}
+
+In this chapter we provide a collection of resources and tools for researchers to facilitate Open Science practices. The resources are further ordered by stage of the research cycle ([_Plan your Study_](#plan), [_Conduct your Study_](#conduct), [_Analyse your Data_](#analyse), [_Publish your Data, Materials, and Paper_](#publish)). Also, a good first source of answers to Open Science questions is [Felix Henninger's Open Science FAQ](https://felixhenninger.gitbooks.io/open-science-knowledge-base/content/).
+
+
+## Plan your Study {#plan}
+
+Before diving into the data collection process, it might feel like Open Science practices such as pre-registration are consuming a lot of valuable time. But apart from the importance of these practices for credibility and transparency of your research, these practices can actually help organizing your project and saving time... especially when you don't need to search for resources.
+
+###Evaluate Research
+
+This process should actually be part of the literature search before even planing your study. A quick way to evaluate the research that you found during your search is to use the following tools. They enable you to find discussions, evaluations, peer reviews, and replication reports on specific articles:
+
+*   [https://www.altmetric.com/](https://www.altmetric.com/)
+*   [http://curatescience.org/](http://curatescience.org/)
+*   [https://pubpeer.com/](https://pubpeer.com/) (also available as browser add-on, and integrated in the Altmetric's score)
+
+###Checklist for Research Workflow
+
+Throughout the research cycle you can use Brian A. Nosek's 8-step [Checklist for Research Workflow](https://osf.io/mv8pj/wiki/home/) to control for an efficient open science research workflow.
+
+###Consent Forms
+
+When data will be shared publicly particiants need to be informed about their anonymized data being shared. Here are some full german templates of consent forms for [dyadic experiments](https://osf.io/3d5xb/) and [non-dyadic experiments](https://osf.io/kv37u/) (collected by the OSC). For english expressions that can be employed in consent forms, see the [COS Reproducible Research and Statistics Training's collection](https://osf.io/g4jfv/wiki/home/).
+
+###Power Analysis
+
+*   [COS Reproducible Research and Statistics Training](https://osf.io/adkj4/) offers a vast body of resources and material on Power Analysis, e.g. an [Introduction to Power Analysis](https://osf.io/asf53/) by Courtney Soderberg and R code examples for conducting power analyses
+*   [Advanced Power Analysis Workshop](https://osf.io/d76gc/) by Felix Schönbrodt
+
+###Registered Reports (RR)
+
+The Center for Open Science (COS) gives detailed explanations and resources on Registered Reports as well as a list of journals that use Registered Reports as publishing format: [https://cos.io/rr/](https://cos.io/rr/). Links to the repsective guideline are provided.
+
+Examplary guidelines for authors and reviewers: [https://osf.io/pukzy/](https://osf.io/pukzy/)
+
+###Pre-Registration
+
+*   A [pre-analysis checklist](http://blogs.worldbank.org/impactevaluations/a-pre-analysis-plan-checklist) by David McKenzie
+*   A [pre-analysis template](http://cega.berkeley.edu/assets/cega_events/92/Pre-Analysis_Plan_Template_Alejandro_Ganimian.pdf) provided by Alejandro Ganimian
+*   Pre-registration platform on the **Open Science Framework**: [https://osf.io/prereg/](https://osf.io/prereg/)
+*   [OSF Guide to pre-registration](http://help.osf.io/m/registrations/l/546603-enter-the-preregistration-challenge)
+
+***Other Registries for Pre-Registration***
+
+*   [https://aspredicted.org/](https://aspredicted.org/)
+*   [AEA RCT Registry](https://www.socialscienceregistry.org/): The American Economic Association's registry for randomized controlled trials in fields of economics an other social sciences
+*   [RIDIE Registry](http://ridie.3ieimpact.org/): The Registry for International Development Impact Evaluations (open to experimental and observational studies assessing the impact of development programs
+*   [EGAP Registry](http://egap.org/content/registration): Evidence in Governance and Politics is providing an unsupervised stopgap function to store designs until the creation of a general registry for social science research
+
+###DataWiz
+
+The Leibniz Institute of Psychology Information (ZDIP) offers an automated assistant tool for researchers to document and manage their data from the beginning of the research cycle onwards. It includes assistance in creating data management plans and sharing data (internally as well as externally to the community). The tool, called [**DataWiz**](https://datawiz.leibniz-psychology.org/DataWiz/), is available in english and german. It is further attached to the [DataWiz knowledge base](https://datawizkb.leibniz-psychology.org/) which contains helpful information, guidelines, tools and resources for different steps in the research cycle
+
+***
+
+## Conduct your Study {#conduct}
+
+During data collection, using open software, the Open Science Framework, and other collaboration tools can not only enhance your workflow and collaboration in the research team but also create a foundation for data sharing and reproducibility. Here we selected a few resources for this stage.
+
+###Open Software
+
+*   [PsychoPy](http://www.psychopy.org/): Open-source software as a free tool to run neuroscience or psychology experiments written in Python. Represents an alternative to Presentation™ or Inquisit™.
+*   [PsyToolkit](https://www.psytoolkit.org/): Open-source software for running online or lab-based experiments (psychology).
+*   [OpenSesame](http://osdoc.cogsci.nl/): Open-source tool for building experiments for psychology, neuroscience, and experimental economics. It provides an easy graphical interface for beginners and Python scripting for advanced users. Open Sesame can be integrated in the Open Science Framework.
+*   [lab.js](https://labjs.felixhenninger.com/): created by Felix Henninger. A new open tool with graphical interface for building browser-based experiments.
+
+###Born Open Data
+
+Data that is automatically uploaded to a repository (e.g. GitHub) including time stamps and automatically generated logs is called _born open_. Advantages can be full openness & transparency, data management solutions, and simplification of data sharing. For further information see:
+
+- Rouder, J. N. (2016). The what, why, and how of born-open data. _Behavior research methods, 48_(3), 1062-1069\. [https://link.springer.com/article/10.3758/s13428-015-0630-z](https://link.springer.com/content/pdf/10.3758%2Fs13428-015-0630-z.pdf)
+- Rouder, J., Haaf, J. M., & Snyder, H. K. (2018, March 25). Minimizing Mistakes In Psychological Science. [http://doi.org/10.17605/OSF.IO/GXCY5](http://doi.org/10.17605/OSF.IO/GXCY5)
+
+###Open Science Framework (OSF)
+
+The [OSF](https://osf.io/) serves as data repository and collaboration tool. Researchers can structure their projects and controll access to their stored data. A version control system and a live-editing mode enhance workflow between collaborators. OSF also implements an add-on function which enables the user to sync a project with other tools and services such as Dataverse, Figshare, GitHub, Zotero. [Here](https://cos.io/our-products/osf/) is an overview on OSF's feature set and its use in every step of the research cycle.
+
+For a detailed tutorial on using the OSF to share research products, see:
+
+- Soderberg, C. K. (2018). Using OSF to Share Data: A Step-by-Step Guide. Advances in Methods and Practices in Psychological Science. Advance online publication. DOI: [https://doi.org/10.1177/2515245918757689](https://doi.org/10.1177/2515245918757689)
+
+###Other Collaboration Tools
+
+*   [Figshare](https://figshare.com/)
+*   [Dryad](https://datadryad.org/)
+*   [Zenodo](https://zenodo.org/)
+*   [GitHub](https://www.github.com)
+*   [Overleaf](https://www.overleaf.com/)
+*   [PaperHive](https://paperhive.org/)
+
+###Data Anonymization
+
+*   [The OpenAIRE2020 project](https://www.openaire.eu/) developed a web-based anonymization application that helps ensuring participants' privacy rights. A respective online tool is in beta version at this point: [https://amnesia.openaire.eu/index.html](https://amnesia.openaire.eu/index.html)
+*   Alternative: [ARX Data Anonymization Tool](http://arx.deidentifier.org/)
+*   See Ruben Arslan's workshop on [Maintaining privacy with open data](https://osf.io/9j27d/)
+
+***
+
+## Analyse your Data {#analyse}
+
+
+For your research to be transparent and reproducible, a vital part is to provide data cleaning instructions and analysis code (ideally by using nonproprietary software). See the [PRO Initiative's basic guidelines for making your analyses publi](https://opennessinitiative.org/making-your-analyses-public/)[c](https://opennessinitiative.org/making-your-analyses-public/) for a few information. This collection of resources aims at providing some helpful links to facilitate and improving your analysis sharing practices.
+
+###R
+
+Analysing your data with free software such as [R](https://www.r-project.org/) enhances reproducibility without the limitations of proprietary software. A common way to use R is by writing analysis code and graphics code in the [RStudio](https://www.rstudio.com/) interface. It further implements [R Markdown](https://rmarkdown.rstudio.com/), with can be used to create documents, reports, and presentations that are fully reproducible.
+
+Here are some helpful links for researchers who want to learn R:
+
+*   RStudio links to different online guides to learning R: [https://www.rstudio.com/online-learning/](https://www.rstudio.com/online-learning/)
+*   [Swirl](http://swirlstats.com/) is an interactive learning tool which can be directly embedded in RStudio.
+*   RStudio cheat sheets: [https://www.rstudio.com/resources/cheatsheets/](https://www.rstudio.com/resources/cheatsheets/)
+*   Grolemund & Wickham's [_R for Data Science_](http://r4ds.had.co.nz/)
+*   Hadley Wickham's [_Tidy Data_](http://vita.had.co.nz/papers/tidy-data.pdf)
+
+###Reproducible Research{#repro_research}
+
+The _PRO Initiative_ gives a few basic guidelines for authors on how to facilitate reproducibility when sharing your analyses: [https://opennessinitiative.org/making-your-analyses-public/](https://opennessinitiative.org/making-your-analyses-public/)
+
+More specific collections of useful advice on this topic can be found in the following sources:
+
+####Code
+
+*   [Code and Data for the Social Sciences: A Practitioner’s Guide](http://home.bi.no/charlotte.ostergaard/students/CodeAndData.pdf) by Matthew Gentzkow & Jesse M. Shapiro
+*   [R for Reproducible Scientific Analysis](http://swcarpentry.github.io/r-novice-gapminder/): A course by Thomas Wright and Naupaka Zimmerman
+*   [The Reseach Cycle](https://gupsych.github.io/research_cycle/) course on principles on reproducible research and practical training in statistical programming with R, taught by Dale Barr and Lisa DeBruine
+*   If you want to make your code citable, see this GitHub Guide: [https://guides.github.com/activities/citable-code/](https://guides.github.com/activities/citable-code/)
+
+####Metadata
+
+*   [The DRESS Protocall](https://www.projecttier.org/tier-protocol/dress-protocol/) by Project TIER describes what the final documentation of your study should consist of (for empirical social sciences).
+*   [Codebook Cookbook](https://rubenarslan.github.io/codebook/) by Ruben Arslan: R-package (and online-tool) to create a codebook for your dataset.
+*   Creating a codebook within SPSS: [https://libguides.library.kent.edu/SPSS/Codebooks](https://libguides.library.kent.edu/SPSS/Codebooks)
+
+####"Works on my Machine" Error
+
+In his paper (available [here](https://doi.org/10.1017/S1049096516000196)), Nicholas Eubank makes the case for increasing reproducibility by testing files on a different computer. Testing or even sharing code via cloud-based platforms prevents deficits in reproducibility that occur when code runs on the researcher's local platform but not on others'. Avoid the so called _WOMME_ by using tools like:
+
+*   RStudio Cloud ([https://rstudio.cloud/](https://rstudio.cloud/))
+*   Code Ocean ([https://codeocean.com/](https://codeocean.com/))
+
+###Workflow Documentation
+
+*   Rouder, Haaf, and Snyder (2018) wrote a helpful tutorial on how to organize a lab in the face of Open Science practices: [https://psyarxiv.com/gxcy5](https://psyarxiv.com/gxcy5)
+*   [R Markdown](https://rmarkdown.rstudio.com/): Create fully reproducible documents that combine code execution and documentation. A big advantage is the variety of output format: documents (e.g. Word, PDF, interactive R notebook, HTML), presentation slides, shiny apps, websites and more. Multiple languages including R, python, and SQL can be used.
+*   [GitHub](https://github.com) serves as data repository and active research workflow tool. Tracking of contributions of others enables version control on your files. This tool is especially useful for a research team that collaborates on developing code.
+*   As one of multiple features, [Open Science Framework](https://osf.io)'s version control system and its live-editing mode facilitate collaboration within the research team.
+
+###p-Hacking
+
+*   _[p-Hack like a pro](https://osf.io/u4jgz/)_ by Felix Schönbrodt
+*   [_Do's and Don'ts of Data Analysis_](https://osf.io/9fx5q/) by Felix Schönbrodt
+*   An overview on **questionable research practices** (QRP) by Ulrich Schimmack can be found [here](https://replicationindex.wordpress.com/2015/01/24/questionable-research-practices-definition-detect-and-recommendations-for-better-practices/).
+*   Check out: [http://shinyapps.org/apps/p-hacker/](http://shinyapps.org/apps/p-hacker/) for an interactive tool on p-hacking[](http://shinyapps.org/apps/p-hacker/)
+
+###Jupyter
+
+[The Jupyter Notebook](https://jupyter.org/) is an open source web-application for interactive computing. Virtual notebooks support over 40 programming languages, can be shared, collaboratively edited and can return interactive output. Uses vary from data cleaning, transformation and visualization to machine learning, statistical modeling and more.
+
+[A tutorial on the Jupyter Notebook](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook) by Karlijn Willems is a first place-to-go for trying out the Jupyter Notebook. Also, help can be seeked at the Jupyter community (e.g. on [GitHub](https://github.com/jupyter/help) or [StackOverflow](https://stackoverflow.com/questions/tagged/jupyter))
+
+
+***
+
+## Publish your Data, Material, and Paper{#publish}
+
+In the publication stage of the research cycle, things can get a little tricky when you want to embrace Open Science values. The following links will help you find Open Access journals, check your publisher's policies, and guide you through licencing issues. Also, resources on sharing of data and materials are given.
+
+###FAIR Principles
+
+Before Sharing your data, your material, and your paper, we recommend to check out the [FAIR Data Principles](https://www.force11.org/group/fairgroup/fairprinciples), that aim to make your data:
+
+*   Findable
+*   Accessible
+*   Interoperable
+*   Re-usable
+
+Also see our section [_Reproducible Research_](#repro_research) for further resurces on the topic of re-usabilty principles
+
+###Open Data Repositories
+
+[Global Registry of Research Data Repositories](https://www.re3data.org/) covering data repositories from different academic disciplines. You can directly search for repositories or browse the registry by several filters.
+
+Examples of common general-purpose repositories:
+
+*   [Open Science Framework](https://osf.io/)
+*   [Dryad Digital Repository](https://datadryad.org/)
+*   [Figshare](https://figshare.com/)
+*   [Harvard Dataverse Network](https://dataverse.harvard.edu/)
+*   [Zenodo](https://zenodo.org/)
+
+A list of general-purpose and domain-specific data repositories is also provided by Masuzzo P, Martens L. (2017) Do you speak open science? Resources and tips to learn the language. _PeerJ Preprints_ 5:e2689v1 [https://doi.org/10.7287/peerj.preprints.2689v1](https://doi.org/10.7287/peerj.preprints.2689v1)
+
+###How To Find Open Access Journals
+
+*   The [Directory of Open Access Journals](https://doaj.org/) serves as directory for researchers who are looking for high-quality, peer-reviewed Open Access journals and respective articles. You will also find useful information on publication charges and licencing policies as well as links to editorial information.
+*   Use the [CoFactor Journal Seleceting Tool](http://cofactorscience.com/journal-selector) to filter for journals fitting your search criteria (e.g. Open Access).
+*   The Eigenfactor Project provides a list of no-fee Open Access journals for all fields: [http://www.eigenfactor.org/openaccess/fullfree.php](http://www.eigenfactor.org/openaccess/fullfree.php)
+
+###Publisher's Policies?
+
+[Sherpa/RoMEO](http://www.sherpa.ac.uk/romeo/index.php) is a database containing publishers' policies on self-archiving of journal articles. Since policies vary between publishers this tool will shed some light if you are unsure about publisher's policies.
+
+###Share Preprints
+
+Although depending on publisher's policies, it is often possible to publish preprints of your paper. A common preprint repository is [Cornell University's ArXiv](https://ArXiv.org) which serves in many research fields.
+
+For specific domains, here are some examples of preprint service (mostly powered by the [Open Science Framework Preprints](https://osf.io/preprints/)):
+
+*   Psychological Sciences: [PsyArXiv](https://osf.io/preprints/psyarxiv/)
+*   Social Sciences: [SocARXIV](https://osf.io/preprints/socarxiv)
+*   Engineering: [engrXiV](https://osf.io/preprints/engrxiv)
+*   Agriculture and Allied Sciences: [AgriXiv](https://osf.io/preprints/agrixiv)
+
+###Licencing
+
+The _Peer Reviewers' Openness Initiative (PRO)_ gives a very helpful overview over licensing issues that are prevalent when publishing your paper, data, and materials: [https://opennessinitiative.org/licensing-issues/](https://opennessinitiative.org/licensing-issues/)<a>:</a>
+
+> "When thinking about what one can, must, or should do with Open Material and Open Data, one has to differentiate on the one hand legally-enforceable rules (which are handled with legal licenses) and, on the other hand, rules and standards of the scientific community. If a piece of work is in the public domain (e.g., a CC0 license) there is no legal requirement to give attribution, but as a scientist one still has the ethical obligation to give a proper citation. Laws, ethics, and professional courtesy are all ways that the community can protect those that open their data."
+
+Also, the [OpenDefinition](http://opendefinition.org/licenses/) project lists licenses for content and data.

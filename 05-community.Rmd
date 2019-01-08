@@ -1,0 +1,37 @@
+# Community {#community}
+
+###Other Open Science Initiatives
+
+Information on other Open Science initiatives, resources of the Open Science community and how to stay tuned on Open Science news.
+
+*   [Center for Open Science](https://cos.io/)
+*   [Netzwerk der Open-Science-Initiativen (NOSI)](https://osf.io/tbkzh/)
+*   [List of Open Science Initiatives](https://osf.io/tbkzh/wiki/home/)
+*   [Berkeley Initiative for Transparency in the Social Sciences](https://www.bitss.org/)
+*   [Commitment to Research Transparency and Open Science](http://www.researchtransparency.org/)
+*   [QUEST Center for Transforming Biomedical Research](https://www.bihealth.org/de/quest-center/)
+*   [Open Science Initiative in NeuroScience at McGill University, Canada](https://www.mcgill.ca/neuro/open-science-0)
+
+French national action plan for buiding an Open Science ecosystem: [https://www.etalab.gouv.fr/wp-content/uploads/2018/04/PlanOGP-FR-2018-2020-VF-FR.pdf](https://www.etalab.gouv.fr/wp-content/uploads/2018/04/PlanOGP-FR-2018-2020-VF-FR.pdf) (pp.57 / Engagement 18)
+
+###Social Media
+
+Twitter:
+
+*   [\@OpenScience](https://twitter.com/openscience)
+
+Facebook:
+
+*   [PsychMAP](https://www.facebook.com/groups/psychmap/about/)
+*   [PsychMAD](https://www.facebook.com/groups/853552931365745/?ref=group_header)
+
+Blogs:
+
+*   [http://www.the100.ci/](http://www.the100.ci/)
+*   [http://sometimesimwrong.typepad.com/](http://sometimesimwrong.typepad.com/)
+*   [Center for Open Science Blog](https://cos.io/blog/)
+
+Other formats:
+
+*   [http://www.openscienceradio.org/](http://www.openscienceradio.org/)
+*   [https://ask-open-science.org/](https://ask-open-science.org/)

@@ -1,0 +1,1120 @@
+\documentclass[12pt,]{report}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Open Science Toolbox},
+            pdfauthor={Lutz Heil; lheil@students.uni-mainz.de; LMU Open Science Center},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Open Science Toolbox}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+  \subtitle{A Collection of Resources to Facilitate Open Science Practices}
+  \author{Lutz Heil \\ \href{mailto:lheil@students.uni-mainz.de}{\nolinkurl{lheil@students.uni-mainz.de}} \\ LMU Open Science Center}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{April 14, 2018}
+
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
+\titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\usepackage{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage{hyperref}% http://ctan.org/pkg/hyperref
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue
+}
+\usepackage{titling}
+\pretitle{\begin{center}\huge \vskip 3em}
+\posttitle{%
+  \par\large \vskip 0.5em
+  A Collection of Resources to Facilitate Open Science Practices
+  \par\end{center}\vskip 1em}
+\preauthor{%
+  \begin{center}
+  \large \lineskip 0.5em%
+  \itshape
+  \begin{tabular}[t]{c}
+  }
+\postauthor{\end{tabular}\par\end{center}}
+\predate{\begin{center}\large}
+\postdate{%
+  \normalsize
+  \par
+  [last edit: \today ]
+  \vfill
+  \includegraphics[width=4cm,height=6cm]{images/lmu-osc_logo_small.jpg}
+  \end{center}
+}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\renewcommand\thesubsection{}
+\renewcommand\thesubsubsection{}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\chapter*{Preface}\label{preface}
+\addcontentsline{toc}{chapter}{Preface}
+
+The motivation to engage in a more transparent research and the actual
+implementation of Open Science practices into the research workflow can
+be two very distinct things. Work on the motivational side has been
+successfully done in various contexts (see section
+\protect\hyperlink{key_papers}{\emph{Key Papers}}). Here the focus
+rather lays on closing the intention-action gap. Providing an overview
+of handy Open Science tools and resources might facilitate the
+implementation of these practices and thereby foster Open Science on a
+practical level rather than on a theoretical.
+
+So far, there is a vast body of helpful tools that can be used in order
+to foster Open Science practices. Without doubt, all of these tools add
+value to a more transparent research. But for reasons of clarity and to
+save time which would be consumed by trawling through the web, this
+toolbox aims at providing only a selection of links to these resources
+and tools. Our goal is to give a short overview on possibilities of how
+to enhance your Open Science practices without consuming too much of
+your time.
+
+\textbf{How can I use the toolbox?} If you're time is too valuable to
+check out the toolbox entirely, a first start is to read the first
+chapter \protect\hyperlink{getting_started}{\emph{Getting Started}}.
+Though, the main body of the toolbox consists of the
+\protect\hyperlink{res_researchers}{\emph{Resources for Researchers}}.
+Here you'll find Open Science resources ordered by the stage of the
+research cycle. If you are interested in teaching about Open Science or
+if you search for workshop material to educate yourself, you might want
+to jump to chapter 3: \protect\hyperlink{res_teaching}{\emph{Resources
+for Teaching}}. Finally there is a small chapter called
+\protect\hyperlink{community}{\emph{Community}} which can be helpful if
+you seek information on how to get involved and where to get Open
+Science news.
+
+\textbf{Context.} This toolbox has been created during my work at the
+\href{http://www.osc.uni-muenchen.de/index.html}{\textbf{Open Science
+Center (OSC)}} of the Ludwig-Maximilians-Universität, Munich. This
+document is supposed to serve as a merger of all resources that are
+provided in the online toolbox (available on:
+\url{http://www.osc.uni-muenchen.de/toolbox/index.html}). Special thanks
+go to my supervisor
+\href{http://www.osc.uni-muenchen.de/members/individual-members/schoenbrodt/index.html}{Felix
+Schönbrodt} who came up with the idea and made important contributions.
+
+\textbf{Contribute.} The toolbox raises no claim to completeness, it
+should rather serve as selection of tools. If you think there is (1) an
+important tool or article that should be included, (2) a broken link or
+citation, or (3) any other issue or question, please feel free to
+contact me and contribute to this toolbox:
+\href{mailto:lheil@students.uni-mainz.de}{\nolinkurl{lheil@students.uni-mainz.de}}
+
+\hypertarget{getting_started}{\chapter{Getting
+Started}\label{getting_started}}
+
+If you don't know where to start, here are 10 easy steps from
+\href{https://osf.io/hjx5p/}{Felix Schönbrodt's Open Science workshop},
+that you can take towards a more transparent and reproducible research
+practice. Every step will add a little more scientific value to your
+research.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Create an account on OSF} (\url{http://osf.io/})
+\item
+  \textbf{Upload the material for an existing study} (questionnaires,
+  maybe reproducible analysis scripts) to an OSF project.
+\item
+  \textbf{Add an open license to all of your figures} (so that you can
+  reuse them in later publications, blog posts, or presentations:
+  „Figure available under a CC-BY4.0 license at osf.io/XXXX.``
+\item
+  For the next project: \textbf{Change the consent forms} in a way that
+  \textbf{open data} would be possible for that project (see
+  \url{https://osf.io/mgwk8/wiki/Consent\%20form\%20templates\%20for\%20open\%20data/}).
+\item
+  \textbf{Sign the PRO initiative} and expect openness (or a
+  justification why not) if you review another paper
+  (\url{https://opennessinitiative.org/})
+\item
+  For the next data analysis: Practice to create \textbf{scripts for
+  reproducible data analysis} (e.g., SPSS syntax, R scripts). All
+  analytic steps that lead from raw data to the final results should be
+  reproducible.
+\item
+  \textbf{Let a master student preregister his/her thesis}. Can be
+  either a „local preregisteration``, or a proper preregistration at OSF
+  or at \url{https://aspredicted.org/}. See this workshop material for
+  how to do a preregistration: \url{https://osf.io/yd487/}
+  \url{https://osf.io/mx7yp/}
+\item
+  \textbf{Do you own first preregistration}; enter the Prereg challenge
+  and get 1000\$: \url{https://cos.io/prereg/}
+\item
+  \textbf{Publish your first open data set}: Ensure anonymity, provide a
+  codebook. See here for details:
+  \url{http://econtent.hogrefe.com/doi/pdf/10.1026/0033-3042/a000341}
+\item
+  Team up with colleagues and \textbf{establish a local open science
+  initiative} (enter your name and affiliation in
+  \href{https://osf.io/tbkzh/wiki/Wer\%20macht\%20bei\%20meiner\%20Uni\%20mit\%3F/}{this
+  list} and see other colleagues that want to engage in a local
+  initiative)
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{itemize}
+\tightlist
+\item
+  \url{http://www.osc.uni-muenchen.de/news/os_flyer/index.html} This
+  info flyer gives a great overview on easy steps to take toward
+  transparent research.
+\item
+  \href{https://felixhenninger.gitbooks.io/open-science-knowledge-base/content/}{Felix
+  Henninger's Open Science knowledge base} is a further helpful resource
+  for quick answers to basic Open Science questions
+\end{itemize}
+
+\hypertarget{res_researchers}{\chapter{Resources for
+Researchers}\label{res_researchers}}
+
+In this chapter we provide a collection of resources and tools for
+researchers to facilitate Open Science practices. The resources are
+further ordered by stage of the research cycle
+(\protect\hyperlink{plan}{\emph{Plan your Study}},
+\protect\hyperlink{conduct}{\emph{Conduct your Study}},
+\protect\hyperlink{analyse}{\emph{Analyse your Data}},
+\protect\hyperlink{publish}{\emph{Publish your Data, Materials, and
+Paper}}). Also, a good first source of answers to Open Science questions
+is
+\href{https://felixhenninger.gitbooks.io/open-science-knowledge-base/content/}{Felix
+Henninger's Open Science FAQ}.
+
+\hypertarget{plan}{\section{Plan your Study}\label{plan}}
+
+Before diving into the data collection process, it might feel like Open
+Science practices such as pre-registration are consuming a lot of
+valuable time. But apart from the importance of these practices for
+credibility and transparency of your research, these practices can
+actually help organizing your project and saving time\ldots{} especially
+when you don't need to search for resources.
+
+\subsection{Evaluate Research}\label{evaluate-research}
+
+This process should actually be part of the literature search before
+even planing your study. A quick way to evaluate the research that you
+found during your search is to use the following tools. They enable you
+to find discussions, evaluations, peer reviews, and replication reports
+on specific articles:
+
+\begin{itemize}
+\tightlist
+\item
+  \url{https://www.altmetric.com/}
+\item
+  \url{http://curatescience.org/}
+\item
+  \url{https://pubpeer.com/} (also available as browser add-on, and
+  integrated in the Altmetric's score)
+\end{itemize}
+
+\subsection{Checklist for Research
+Workflow}\label{checklist-for-research-workflow}
+
+Throughout the research cycle you can use Brian A. Nosek's 8-step
+\href{https://osf.io/mv8pj/wiki/home/}{Checklist for Research Workflow}
+to control for an efficient open science research workflow.
+
+\subsection{Consent Forms}\label{consent-forms}
+
+When data will be shared publicly particiants need to be informed about
+their anonymized data being shared. Here are some full german templates
+of consent forms for \href{https://osf.io/3d5xb/}{dyadic experiments}
+and \href{https://osf.io/kv37u/}{non-dyadic experiments} (collected by
+the OSC). For english expressions that can be employed in consent forms,
+see the \href{https://osf.io/g4jfv/wiki/home/}{COS Reproducible Research
+and Statistics Training's collection}.
+
+\subsection{Power Analysis}\label{power-analysis}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://osf.io/adkj4/}{COS Reproducible Research and Statistics
+  Training} offers a vast body of resources and material on Power
+  Analysis, e.g.~an \href{https://osf.io/asf53/}{Introduction to Power
+  Analysis} by Courtney Soderberg and R code examples for conducting
+  power analyses
+\item
+  \href{https://osf.io/d76gc/}{Advanced Power Analysis Workshop} by
+  Felix Schönbrodt
+\end{itemize}
+
+\subsection{Registered Reports (RR)}\label{registered-reports-rr}
+
+The Center for Open Science (COS) gives detailed explanations and
+resources on Registered Reports as well as a list of journals that use
+Registered Reports as publishing format: \url{https://cos.io/rr/}. Links
+to the repsective guideline are provided.
+
+Examplary guidelines for authors and reviewers:
+\url{https://osf.io/pukzy/}
+
+\subsection{Pre-Registration}\label{pre-registration}
+
+\begin{itemize}
+\tightlist
+\item
+  A
+  \href{http://blogs.worldbank.org/impactevaluations/a-pre-analysis-plan-checklist}{pre-analysis
+  checklist} by David McKenzie
+\item
+  A
+  \href{http://cega.berkeley.edu/assets/cega_events/92/Pre-Analysis_Plan_Template_Alejandro_Ganimian.pdf}{pre-analysis
+  template} provided by Alejandro Ganimian
+\item
+  Pre-registration platform on the \textbf{Open Science Framework}:
+  \url{https://osf.io/prereg/}
+\item
+  \href{http://help.osf.io/m/registrations/l/546603-enter-the-preregistration-challenge}{OSF
+  Guide to pre-registration}
+\end{itemize}
+
+\textbf{\emph{Other Registries for Pre-Registration}}
+
+\begin{itemize}
+\tightlist
+\item
+  \url{https://aspredicted.org/}
+\item
+  \href{https://www.socialscienceregistry.org/}{AEA RCT Registry}: The
+  American Economic Association's registry for randomized controlled
+  trials in fields of economics an other social sciences
+\item
+  \href{http://ridie.3ieimpact.org/}{RIDIE Registry}: The Registry for
+  International Development Impact Evaluations (open to experimental and
+  observational studies assessing the impact of development programs
+\item
+  \href{http://egap.org/content/registration}{EGAP Registry}: Evidence
+  in Governance and Politics is providing an unsupervised stopgap
+  function to store designs until the creation of a general registry for
+  social science research
+\end{itemize}
+
+\subsection{DataWiz}\label{datawiz}
+
+The Leibniz Institute of Psychology Information (ZDIP) offers an
+automated assistant tool for researchers to document and manage their
+data from the beginning of the research cycle onwards. It includes
+assistance in creating data management plans and sharing data
+(internally as well as externally to the community). The tool, called
+\href{https://datawiz.leibniz-psychology.org/DataWiz/}{\textbf{DataWiz}},
+is available in english and german. It is further attached to the
+\href{https://datawizkb.leibniz-psychology.org/}{DataWiz knowledge base}
+which contains helpful information, guidelines, tools and resources for
+different steps in the research cycle
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\hypertarget{conduct}{\section{Conduct your Study}\label{conduct}}
+
+During data collection, using open software, the Open Science Framework,
+and other collaboration tools can not only enhance your workflow and
+collaboration in the research team but also create a foundation for data
+sharing and reproducibility. Here we selected a few resources for this
+stage.
+
+\subsection{Open Software}\label{open-software}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{http://www.psychopy.org/}{PsychoPy}: Open-source software as a
+  free tool to run neuroscience or psychology experiments written in
+  Python. Represents an alternative to Presentation™ or Inquisit™.
+\item
+  \href{https://www.psytoolkit.org/}{PsyToolkit}: Open-source software
+  for running online or lab-based experiments (psychology).
+\item
+  \href{http://osdoc.cogsci.nl/}{OpenSesame}: Open-source tool for
+  building experiments for psychology, neuroscience, and experimental
+  economics. It provides an easy graphical interface for beginners and
+  Python scripting for advanced users. Open Sesame can be integrated in
+  the Open Science Framework.
+\item
+  \href{https://labjs.felixhenninger.com/}{lab.js}: created by Felix
+  Henninger. A new open tool with graphical interface for building
+  browser-based experiments.
+\end{itemize}
+
+\subsection{Born Open Data}\label{born-open-data}
+
+Data that is automatically uploaded to a repository (e.g.~GitHub)
+including time stamps and automatically generated logs is called
+\emph{born open}. Advantages can be full openness \& transparency, data
+management solutions, and simplification of data sharing. For further
+information see:
+
+\begin{itemize}
+\tightlist
+\item
+  Rouder, J. N. (2016). The what, why, and how of born-open data.
+  \emph{Behavior research methods, 48}(3), 1062-1069.
+  \href{https://link.springer.com/content/pdf/10.3758\%2Fs13428-015-0630-z.pdf}{https://link.springer.com/article/10.3758/s13428-015-0630-z}
+\item
+  Rouder, J., Haaf, J. M., \& Snyder, H. K. (2018, March 25). Minimizing
+  Mistakes In Psychological Science.
+  \url{http://doi.org/10.17605/OSF.IO/GXCY5}
+\end{itemize}
+
+\subsection{Open Science Framework
+(OSF)}\label{open-science-framework-osf}
+
+The \href{https://osf.io/}{OSF} serves as data repository and
+collaboration tool. Researchers can structure their projects and
+controll access to their stored data. A version control system and a
+live-editing mode enhance workflow between collaborators. OSF also
+implements an add-on function which enables the user to sync a project
+with other tools and services such as Dataverse, Figshare, GitHub,
+Zotero. \href{https://cos.io/our-products/osf/}{Here} is an overview on
+OSF's feature set and its use in every step of the research cycle.
+
+For a detailed tutorial on using the OSF to share research products,
+see:
+
+\begin{itemize}
+\tightlist
+\item
+  Soderberg, C. K. (2018). Using OSF to Share Data: A Step-by-Step
+  Guide. Advances in Methods and Practices in Psychological Science.
+  Advance online publication. DOI:
+  \url{https://doi.org/10.1177/2515245918757689}
+\end{itemize}
+
+\subsection{Other Collaboration Tools}\label{other-collaboration-tools}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://figshare.com/}{Figshare}
+\item
+  \href{https://datadryad.org/}{Dryad}
+\item
+  \href{https://zenodo.org/}{Zenodo}
+\item
+  \href{https://www.github.com}{GitHub}
+\item
+  \href{https://www.overleaf.com/}{Overleaf}
+\item
+  \href{https://paperhive.org/}{PaperHive}
+\end{itemize}
+
+\subsection{Data Anonymization}\label{data-anonymization}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://www.openaire.eu/}{The OpenAIRE2020 project} developed a
+  web-based anonymization application that helps ensuring participants'
+  privacy rights. A respective online tool is in beta version at this
+  point: \url{https://amnesia.openaire.eu/index.html}
+\item
+  Alternative: \href{http://arx.deidentifier.org/}{ARX Data
+  Anonymization Tool}
+\item
+  See Ruben Arslan's workshop on
+  \href{https://osf.io/9j27d/}{Maintaining privacy with open data}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\hypertarget{analyse}{\section{Analyse your Data}\label{analyse}}
+
+For your research to be transparent and reproducible, a vital part is to
+provide data cleaning instructions and analysis code (ideally by using
+nonproprietary software). See the
+\href{https://opennessinitiative.org/making-your-analyses-public/}{PRO
+Initiative's basic guidelines for making your analyses
+publi}\href{https://opennessinitiative.org/making-your-analyses-public/}{c}
+for a few information. This collection of resources aims at providing
+some helpful links to facilitate and improving your analysis sharing
+practices.
+
+\subsection{R}\label{r}
+
+Analysing your data with free software such as
+\href{https://www.r-project.org/}{R} enhances reproducibility without
+the limitations of proprietary software. A common way to use R is by
+writing analysis code and graphics code in the
+\href{https://www.rstudio.com/}{RStudio} interface. It further
+implements \href{https://rmarkdown.rstudio.com/}{R Markdown}, with can
+be used to create documents, reports, and presentations that are fully
+reproducible.
+
+Here are some helpful links for researchers who want to learn R:
+
+\begin{itemize}
+\tightlist
+\item
+  RStudio links to different online guides to learning R:
+  \url{https://www.rstudio.com/online-learning/}
+\item
+  \href{http://swirlstats.com/}{Swirl} is an interactive learning tool
+  which can be directly embedded in RStudio.
+\item
+  RStudio cheat sheets:
+  \url{https://www.rstudio.com/resources/cheatsheets/}
+\item
+  Grolemund \& Wickham's \href{http://r4ds.had.co.nz/}{\emph{R for Data
+  Science}}
+\item
+  Hadley Wickham's
+  \href{http://vita.had.co.nz/papers/tidy-data.pdf}{\emph{Tidy Data}}
+\end{itemize}
+
+\hypertarget{repro_research}{\subsection{Reproducible
+Research}\label{repro_research}}
+
+The \emph{PRO Initiative} gives a few basic guidelines for authors on
+how to facilitate reproducibility when sharing your analyses:
+\url{https://opennessinitiative.org/making-your-analyses-public/}
+
+More specific collections of useful advice on this topic can be found in
+the following sources:
+
+\subsubsection{Code}\label{code}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{http://home.bi.no/charlotte.ostergaard/students/CodeAndData.pdf}{Code
+  and Data for the Social Sciences: A Practitioner's Guide} by Matthew
+  Gentzkow \& Jesse M. Shapiro
+\item
+  \href{http://swcarpentry.github.io/r-novice-gapminder/}{R for
+  Reproducible Scientific Analysis}: A course by Thomas Wright and
+  Naupaka Zimmerman
+\item
+  \href{https://gupsych.github.io/research_cycle/}{The Reseach Cycle}
+  course on principles on reproducible research and practical training
+  in statistical programming with R, taught by Dale Barr and Lisa
+  DeBruine
+\item
+  If you want to make your code citable, see this GitHub Guide:
+  \url{https://guides.github.com/activities/citable-code/}
+\end{itemize}
+
+\subsubsection{Metadata}\label{metadata}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://www.projecttier.org/tier-protocol/dress-protocol/}{The
+  DRESS Protocall} by Project TIER describes what the final
+  documentation of your study should consist of (for empirical social
+  sciences).
+\item
+  \href{https://rubenarslan.github.io/codebook/}{Codebook Cookbook} by
+  Ruben Arslan: R-package (and online-tool) to create a codebook for
+  your dataset.
+\item
+  Creating a codebook within SPSS:
+  \url{https://libguides.library.kent.edu/SPSS/Codebooks}
+\end{itemize}
+
+\subsubsection{\texorpdfstring{``Works on my Machine''
+Error}{Works on my Machine Error}}\label{works-on-my-machine-error}
+
+In his paper (available
+\href{https://doi.org/10.1017/S1049096516000196}{here}), Nicholas Eubank
+makes the case for increasing reproducibility by testing files on a
+different computer. Testing or even sharing code via cloud-based
+platforms prevents deficits in reproducibility that occur when code runs
+on the researcher's local platform but not on others'. Avoid the so
+called \emph{WOMME} by using tools like:
+
+\begin{itemize}
+\tightlist
+\item
+  RStudio Cloud (\url{https://rstudio.cloud/})
+\item
+  Code Ocean (\url{https://codeocean.com/})
+\end{itemize}
+
+\subsection{Workflow Documentation}\label{workflow-documentation}
+
+\begin{itemize}
+\tightlist
+\item
+  Rouder, Haaf, and Snyder (2018) wrote a helpful tutorial on how to
+  organize a lab in the face of Open Science practices:
+  \url{https://psyarxiv.com/gxcy5}
+\item
+  \href{https://rmarkdown.rstudio.com/}{R Markdown}: Create fully
+  reproducible documents that combine code execution and documentation.
+  A big advantage is the variety of output format: documents (e.g.~Word,
+  PDF, interactive R notebook, HTML), presentation slides, shiny apps,
+  websites and more. Multiple languages including R, python, and SQL can
+  be used.
+\item
+  \href{https://github.com}{GitHub} serves as data repository and active
+  research workflow tool. Tracking of contributions of others enables
+  version control on your files. This tool is especially useful for a
+  research team that collaborates on developing code.
+\item
+  As one of multiple features, \href{https://osf.io}{Open Science
+  Framework}'s version control system and its live-editing mode
+  facilitate collaboration within the research team.
+\end{itemize}
+
+\subsection{p-Hacking}\label{p-hacking}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{\href{https://osf.io/u4jgz/}{p-Hack like a pro}} by Felix
+  Schönbrodt
+\item
+  \href{https://osf.io/9fx5q/}{\emph{Do's and Don'ts of Data Analysis}}
+  by Felix Schönbrodt
+\item
+  An overview on \textbf{questionable research practices} (QRP) by
+  Ulrich Schimmack can be found
+  \href{https://replicationindex.wordpress.com/2015/01/24/questionable-research-practices-definition-detect-and-recommendations-for-better-practices/}{here}.
+\item
+  Check out: \url{http://shinyapps.org/apps/p-hacker/} for an
+  interactive tool on
+  p-hacking\href{http://shinyapps.org/apps/p-hacker/}{}
+\end{itemize}
+
+\subsection{Jupyter}\label{jupyter}
+
+\href{https://jupyter.org/}{The Jupyter Notebook} is an open source
+web-application for interactive computing. Virtual notebooks support
+over 40 programming languages, can be shared, collaboratively edited and
+can return interactive output. Uses vary from data cleaning,
+transformation and visualization to machine learning, statistical
+modeling and more.
+
+\href{https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook}{A
+tutorial on the Jupyter Notebook} by Karlijn Willems is a first
+place-to-go for trying out the Jupyter Notebook. Also, help can be
+seeked at the Jupyter community (e.g.~on
+\href{https://github.com/jupyter/help}{GitHub} or
+\href{https://stackoverflow.com/questions/tagged/jupyter}{StackOverflow})
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\hypertarget{publish}{\section{Publish your Data, Material, and
+Paper}\label{publish}}
+
+In the publication stage of the research cycle, things can get a little
+tricky when you want to embrace Open Science values. The following links
+will help you find Open Access journals, check your publisher's
+policies, and guide you through licencing issues. Also, resources on
+sharing of data and materials are given.
+
+\subsection{FAIR Principles}\label{fair-principles}
+
+Before Sharing your data, your material, and your paper, we recommend to
+check out the
+\href{https://www.force11.org/group/fairgroup/fairprinciples}{FAIR Data
+Principles}, that aim to make your data:
+
+\begin{itemize}
+\tightlist
+\item
+  Findable
+\item
+  Accessible
+\item
+  Interoperable
+\item
+  Re-usable
+\end{itemize}
+
+Also see our section
+\protect\hyperlink{repro_research}{\emph{Reproducible Research}} for
+further resurces on the topic of re-usabilty principles
+
+\subsection{Open Data Repositories}\label{open-data-repositories}
+
+\href{https://www.re3data.org/}{Global Registry of Research Data
+Repositories} covering data repositories from different academic
+disciplines. You can directly search for repositories or browse the
+registry by several filters.
+
+Examples of common general-purpose repositories:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://osf.io/}{Open Science Framework}
+\item
+  \href{https://datadryad.org/}{Dryad Digital Repository}
+\item
+  \href{https://figshare.com/}{Figshare}
+\item
+  \href{https://dataverse.harvard.edu/}{Harvard Dataverse Network}
+\item
+  \href{https://zenodo.org/}{Zenodo}
+\end{itemize}
+
+A list of general-purpose and domain-specific data repositories is also
+provided by Masuzzo P, Martens L. (2017) Do you speak open science?
+Resources and tips to learn the language. \emph{PeerJ Preprints}
+5:e2689v1 \url{https://doi.org/10.7287/peerj.preprints.2689v1}
+
+\subsection{How To Find Open Access
+Journals}\label{how-to-find-open-access-journals}
+
+\begin{itemize}
+\tightlist
+\item
+  The \href{https://doaj.org/}{Directory of Open Access Journals} serves
+  as directory for researchers who are looking for high-quality,
+  peer-reviewed Open Access journals and respective articles. You will
+  also find useful information on publication charges and licencing
+  policies as well as links to editorial information.
+\item
+  Use the \href{http://cofactorscience.com/journal-selector}{CoFactor
+  Journal Seleceting Tool} to filter for journals fitting your search
+  criteria (e.g.~Open Access).
+\item
+  The Eigenfactor Project provides a list of no-fee Open Access journals
+  for all fields:
+  \url{http://www.eigenfactor.org/openaccess/fullfree.php}
+\end{itemize}
+
+\subsection{Publisher's Policies?}\label{publishers-policies}
+
+\href{http://www.sherpa.ac.uk/romeo/index.php}{Sherpa/RoMEO} is a
+database containing publishers' policies on self-archiving of journal
+articles. Since policies vary between publishers this tool will shed
+some light if you are unsure about publisher's policies.
+
+\subsection{Share Preprints}\label{share-preprints}
+
+Although depending on publisher's policies, it is often possible to
+publish preprints of your paper. A common preprint repository is
+\href{https://ArXiv.org}{Cornell University's ArXiv} which serves in
+many research fields.
+
+For specific domains, here are some examples of preprint service (mostly
+powered by the \href{https://osf.io/preprints/}{Open Science Framework
+Preprints}):
+
+\begin{itemize}
+\tightlist
+\item
+  Psychological Sciences:
+  \href{https://osf.io/preprints/psyarxiv/}{PsyArXiv}
+\item
+  Social Sciences: \href{https://osf.io/preprints/socarxiv}{SocARXIV}
+\item
+  Engineering: \href{https://osf.io/preprints/engrxiv}{engrXiV}
+\item
+  Agriculture and Allied Sciences:
+  \href{https://osf.io/preprints/agrixiv}{AgriXiv}
+\end{itemize}
+
+\subsection{Licencing}\label{licencing}
+
+The \emph{Peer Reviewers' Openness Initiative (PRO)} gives a very
+helpful overview over licensing issues that are prevalent when
+publishing your paper, data, and materials:
+\url{https://opennessinitiative.org/licensing-issues/}:
+
+\begin{quote}
+``When thinking about what one can, must, or should do with Open
+Material and Open Data, one has to differentiate on the one hand
+legally-enforceable rules (which are handled with legal licenses) and,
+on the other hand, rules and standards of the scientific community. If a
+piece of work is in the public domain (e.g., a CC0 license) there is no
+legal requirement to give attribution, but as a scientist one still has
+the ethical obligation to give a proper citation. Laws, ethics, and
+professional courtesy are all ways that the community can protect those
+that open their data.''
+\end{quote}
+
+Also, the \href{http://opendefinition.org/licenses/}{OpenDefinition}
+project lists licenses for content and data.
+
+\hypertarget{res_teaching}{\chapter{Resources for
+Teaching}\label{res_teaching}}
+
+If you are interested in teaching Open Science practices, see this
+selection of curriculum material, complete examples of online courses,
+and further tools to implement in an Open Science workshop.
+
+\subsection{Open Science Workshop Material of the LMU Open Science
+Center}\label{open-science-workshop-material-of-the-lmu-open-science-center}
+
+\href{https://osf.io/zjrhu/}{}
+
+Angelika Stefan, Felix Schönbrodt, and Lena Schiestel created materials
+for workshops on Open Science related topics:
+
+\begin{itemize}
+\tightlist
+\item
+  Open Science Introduction
+\item
+  Preregistration
+\item
+  Power Analysis
+\item
+  Open Data / Open Materials / Privacy
+\item
+  Open Access
+\end{itemize}
+
+You can use or remix the material under a CC-BY licence for your
+teaching purposes.
+
+\subsection{Open and Reproducible Research Trainer
+Space}\label{open-and-reproducible-research-trainer-space}
+
+The COS provides an \href{https://osf.io/qsb2c/}{Open and Reproducible
+Research Trainer Space} which contains a vast body of material for Open
+Science workshops including sections on workshop planning (pre workshop
+checklists, flyers, email tempates, etc.) and curriculum (slides, full
+manual).
+
+\subsection{Open Science Training
+Handbook}\label{open-science-training-handbook}
+
+Theoretical Open Science basics, organizational aspects, examples,
+practical guidance, and a further resources for each topic are provided
+by the
+\href{https://open-science-training-handbook.gitbooks.io/book/content/}{Open
+Science Training Handbook}. This is a great source for Open Science
+Trainer (and those who are planing on becoming one).
+
+\subsection{Examples of
+Workshops/MOOCs}\label{examples-of-workshopsmoocs}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{\emph{Making an Impact with Open Science by Dr.~Michiel de
+  Jong}}
+\end{itemize}
+
+This course focuses on the benefits researchers can reap from following
+Open Science principles. After giving theoretical introductions to basic
+concepts and advantages of Open Science, the course also aims at giving
+practical training concerning data sharing, open access publishing and
+the use of social media. It is organized in four modules containing both
+video lectures and readings. Study load is around 10 hrs.
+
+\url{https://ocw.tudelft.nl/courses/making-impact-open-science/}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{\emph{Open Science MOOC}}
+\end{itemize}
+
+\begin{quote}
+``This MOOC is designed to help equip students and researchers with the
+skills they need to excel in a modern research environment. It brings
+together the efforts and resources of hundreds of researchers and
+practitioners who have all dedicated their time and experience to create
+a community platform to help propel research forward. The content of
+this MOOC is distilled into 10 core modules. Each module will comprise a
+complete range of resources including videos, research articles, dummy
+datasets and code, as well as `homework' tasks to complete as
+individuals. Because you don't learn how to do Open Science by reading;
+you learn by doing it.''
+\end{quote}
+
+\url{https://opensciencemooc.eu/}
+
+This course also offers a wide module-related
+\href{https://opensciencemooc.eu/open-science-resources/}{collection of
+resources}.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{\emph{Transparent and Open Social Science Research}}
+\end{itemize}
+
+5 week (à 4 hours/week) full course by Berkeley Initiative for
+Transparency in the Social Sciences (BITSS) on the FutureLearn platform.
+
+\url{https://www.futurelearn.com/courses/open-social-science-research}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{\emph{Teaching Reproducible Data Analysis in R}}
+\end{itemize}
+
+In March 2017, the Institute of Neuroscience and Psychology and the
+School of Psychology at the University of Glasgow hosted a one-day
+workshop on teaching reproducible data analysis using R. The workshop
+curriculum and slides are openly available. Also, a further resource
+page links to additional material.
+
+\url{https://gupsych.github.io/trdair_workshop/index.html}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{\emph{BITSS Research Transparency and Reproducibility Training
+  (RT2)}}
+\end{itemize}
+
+All public resources of this workshop holding place in Amsterdam in
+April 2018 are provided. It aims at giving an overview of tools and best
+practices in transparent and reproducible social sciences.
+
+\url{https://osf.io/fw28g/}
+
+\subsection{Interactive Tools}\label{interactive-tools}
+
+\href{https://gupsych.github.io/trdair_workshop/index.html}{http://shinyapps.org/apps/p-hacker/}
+
+\hypertarget{key_papers}{\chapter{Key Papers}\label{key_papers}}
+
+This chapter should serve as a recommondation list of Open Science
+articles, guidelines, and other toolboxes offering helpful resources.
+
+\textbf{Transparency Guide}
+
+Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson,
+H.,\ldots{} Frank, M. C. (2018, March 25). A practical guide for
+transparency in psychological science. Retrieved from
+\href{http://psyarxiv.com/rtygm}{psyarxiv.com/rtygm}
+
+\textbf{Open Science: What, Why, and How}
+
+Spellman, B., Gilbert, E. A., \& Corker, K. S. (2017, September 20).
+Open Science: What, Why, and How. Retrieved from
+\href{http://psyarxiv.com/ak6jr}{psyarxiv.com/ak6jr}
+
+\textbf{PRO Initiatives Guidelines}
+
+``These pages provide guidance in implementing open practices and links
+to resources on the web that help authors contribute to the scientific
+literature in a more open way.''
+\url{https://opennessinitiative.org/guidelines-for-authors/}
+
+\textbf{Open Science FAQ}
+
+\href{https://felixhenninger.gitbooks.io/open-science-knowledge-base/content/}{Felix
+Henninger's FAQ to Open Science} topics offers a great resource for
+quick answers concerning Open Science topcis
+
+\textbf{Managing and Sharing Data: Best Practice for Researchers}
+
+\href{http://www.data-archive.ac.uk/media/2894/managingsharing.pdf}{UK
+Data Archive's guide} for managing data for sharing and for ethics,
+consent, and licensing issues.
+
+\textbf{DataWiz Knowledge Base}
+
+Best practice guidelines, tools and resources for researchers before,
+during and after data collection:
+\url{https://datawizkb.leibniz-psychology.org/}
+
+\textbf{Resource Library by BITSS}
+
+Berkeley Initiative for Transparency in the Social Sciences:
+\url{https://www.bitss.org/resource-tag/education/}
+
+\textbf{Open Science MOOC Resource Library}
+
+Great collection of resources as part of an Open Science MOOC
+\url{https://opensciencemooc.eu/open-science-resources/}
+
+\textbf{Further Recommended Readings}
+
+\begin{itemize}
+\tightlist
+\item
+  Reproducibility Project: Psychology: \url{https://osf.io/ezcuj/}
+\item
+  The Replication Network: \url{https://replicationnetwork.com}
+\item
+  Ioannidis, J. P. (2005). Why most published research findings are
+  false. \emph{PLoS medicine, 2}(8), e124.
+  \url{https://doi.org/10.1371/journal.pmed.0020124}
+\item
+  Simmons, J. P., Nelson, L. D., \& Simonsohn, U. (2011). False-positive
+  psychology: Undisclosed flexibility in data collection and analysis
+  allows presenting anything as significant. \emph{Psychological
+  science, 22}(11)\emph{,} 1359-1366. Available at:
+  \url{http://journals.sagepub.com/doi/pdf/10.1177/0956797611417632}
+\item
+  Simmons, Joseph P. and Nelson, Leif D. and Simonsohn, Uri, A 21 Word
+  Solution (October 14, 2012). Available at SSRN:
+  \url{https://ssrn.com/abstract=2160588} or
+  \url{http://dx.doi.org/10.2139/ssrn.2160588}
+\item
+  Masuzzo P, Martens L. (2017) Do you speak open science? Resources and
+  tips to learn the language. \emph{PeerJ Preprints} 5:e2689v1
+  \url{https://doi.org/10.7287/peerj.preprints.2689v1}
+\item
+  Garret Christensen's
+  \href{https://github.com/garretchristensen/BestPracticesManual/blob/master/Manual.pdf}{Manual
+  of Best Practices in Transparent Social Science}
+\end{itemize}
+
+\hypertarget{community}{\chapter{Community}\label{community}}
+
+\subsection{Other Open Science
+Initiatives}\label{other-open-science-initiatives}
+
+Information on other Open Science initiatives, resources of the Open
+Science community and how to stay tuned on Open Science news.
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://cos.io/}{Center for Open Science}
+\item
+  \href{https://osf.io/tbkzh/}{Netzwerk der Open-Science-Initiativen
+  (NOSI)}
+\item
+  \href{https://osf.io/tbkzh/wiki/home/}{List of Open Science
+  Initiatives}
+\item
+  \href{https://www.bitss.org/}{Berkeley Initiative for Transparency in
+  the Social Sciences}
+\item
+  \href{http://www.researchtransparency.org/}{Commitment to Research
+  Transparency and Open Science}
+\item
+  \href{https://www.bihealth.org/de/quest-center/}{QUEST Center for
+  Transforming Biomedical Research}
+\item
+  \href{https://www.mcgill.ca/neuro/open-science-0}{Open Science
+  Initiative in NeuroScience at McGill University, Canada}
+\end{itemize}
+
+French national action plan for buiding an Open Science ecosystem:
+\url{https://www.etalab.gouv.fr/wp-content/uploads/2018/04/PlanOGP-FR-2018-2020-VF-FR.pdf}
+(pp.57 / Engagement 18)
+
+\subsection{Social Media}\label{social-media}
+
+Twitter:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://twitter.com/openscience}{@OpenScience}
+\end{itemize}
+
+Facebook:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://www.facebook.com/groups/psychmap/about/}{PsychMAP}
+\item
+  \href{https://www.facebook.com/groups/853552931365745/?ref=group_header}{PsychMAD}
+\end{itemize}
+
+Blogs:
+
+\begin{itemize}
+\tightlist
+\item
+  \url{http://www.the100.ci/}
+\item
+  \url{http://sometimesimwrong.typepad.com/}
+\item
+  \href{https://cos.io/blog/}{Center for Open Science Blog}
+\end{itemize}
+
+Other formats:
+
+\begin{itemize}
+\tightlist
+\item
+  \url{http://www.openscienceradio.org/}
+\item
+  \url{https://ask-open-science.org/}
+\end{itemize}
+
+
+\end{document}

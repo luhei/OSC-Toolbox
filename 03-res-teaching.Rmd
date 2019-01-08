@@ -1,0 +1,66 @@
+# Resources for Teaching {#res_teaching}
+
+
+If you are interested in teaching Open Science practices, see this selection of curriculum material, complete examples of online courses, and further tools to implement in an Open Science workshop.
+
+
+###Open Science Workshop Material of the LMU Open Science Center
+
+[](https://osf.io/zjrhu/)
+
+Angelika Stefan, Felix Schönbrodt, and Lena Schiestel created materials for workshops on Open Science related topics:
+
+* Open Science Introduction
+* Preregistration
+* Power Analysis
+* Open Data / Open Materials / Privacy
+* Open Access
+
+You can use or remix the material under a CC-BY licence for your teaching purposes.
+
+###Open and Reproducible Research Trainer Space
+
+The COS provides an [Open and Reproducible Research Trainer Space](https://osf.io/qsb2c/) which contains a vast body of material for Open Science workshops including sections on workshop planning (pre workshop checklists, flyers, email tempates, etc.) and curriculum (slides, full manual).
+
+###Open Science Training Handbook
+
+Theoretical Open Science basics, organizational aspects, examples, practical guidance, and a further resources for each topic are provided by the [Open Science Training Handbook](https://open-science-training-handbook.gitbooks.io/book/content/). This is a great source for Open Science Trainer (and those who are planing on becoming one).
+
+###Examples of Workshops/MOOCs   
+
+
+* ***Making an Impact with Open Science by Dr. Michiel de Jong***   
+
+This course focuses on the benefits researchers can reap from following Open Science principles. After giving theoretical introductions to basic concepts and advantages of Open Science, the course also aims at giving practical training concerning data sharing, open access publishing and the use of social media. It is organized in four modules containing both video lectures and readings. Study load is around 10 hrs.
+
+[https://ocw.tudelft.nl/courses/making-impact-open-science/](https://ocw.tudelft.nl/courses/making-impact-open-science/)
+
+* ***Open Science MOOC***
+
+> "This MOOC is designed to help equip students and researchers with the skills they need to excel in a modern research environment. It brings together the efforts and resources of hundreds of researchers and practitioners who have all dedicated their time and experience to create a community platform to help propel research forward. The content of this MOOC is distilled into 10 core modules. Each module will comprise a complete range of resources including videos, research articles, dummy datasets and code, as well as ‘homework’ tasks to complete as individuals. Because you don’t learn how to do Open Science by reading; you learn by doing it."
+
+[https://opensciencemooc.eu/](https://opensciencemooc.eu/)
+
+This course also offers a wide module-related [collection of resources](https://opensciencemooc.eu/open-science-resources/).
+
+* ***Transparent and Open Social Science Research***
+
+5 week (à 4 hours/week) full course by Berkeley Initiative for Transparency in the Social Sciences (BITSS) on the FutureLearn platform.
+
+[https://www.futurelearn.com/courses/open-social-science-research](https://www.futurelearn.com/courses/open-social-science-research)
+
+* ***Teaching Reproducible Data Analysis in R***
+
+In March 2017, the Institute of Neuroscience and Psychology and the School of Psychology at the University of Glasgow hosted a one-day workshop on teaching reproducible data analysis using R. The workshop curriculum and slides are openly available. Also, a further resource page links to additional material.
+
+[https://gupsych.github.io/trdair_workshop/index.html](https://gupsych.github.io/trdair_workshop/index.html)
+
+* ***BITSS Research Transparency and Reproducibility Training (RT2)***
+
+All public resources of this workshop holding place in Amsterdam in April 2018 are provided. It aims at giving an overview of tools and best practices in transparent and reproducible social sciences.
+
+[https://osf.io/fw28g/](https://osf.io/fw28g/)
+
+###Interactive Tools
+
+[http://shinyapps.org/apps/p-hacker/](https://gupsych.github.io/trdair_workshop/index.html)
